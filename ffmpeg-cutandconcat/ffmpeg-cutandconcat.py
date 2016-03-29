@@ -10,8 +10,8 @@ import os
 import time
 import sys
 
-video1 = 'vid1.mp4'
-video2 = 'vid2.mp4'
+video1 = '../videos/vid1.mp4'
+video2 = '../videos/vid2.mp4'
 
 if os.path.isfile("glued.mp4") == True:
 	os.remove('glued.mp4')

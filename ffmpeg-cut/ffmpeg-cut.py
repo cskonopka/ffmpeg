@@ -10,6 +10,8 @@ import os
 import time
 import sys
 
-time.sleep(.5)
+# video content
+video = '../videos/vid1.mp4'
 
-os.system("ffmpeg -i vid1.mp4 -ss 00:00:00 -to 00:00:05 -c copy vidA.mp4")
+# cut video
+os.system("ffmpeg -i %s -ss 00:00:00 -to 00:00:05 -c copy vidA.mp4" % video)
